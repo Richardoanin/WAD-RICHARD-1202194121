@@ -36,7 +36,7 @@
 
         <div class="container">
             <h5
-                style="text-align: center; background-color: rgb(44, 44, 44); height: 30px; color: white; margin-top: 100px;">
+                style="text-align: center; background-color: rgb(44, 44, 44); height: 30px; color: white; margin-top: 50px;">
                 Reserve your venue now!</h5><br>
 
             <section id="booking"
