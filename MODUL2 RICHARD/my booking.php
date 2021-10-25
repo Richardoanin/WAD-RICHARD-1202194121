@@ -8,12 +8,12 @@
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <title>My Booking</title>
         <?php
-        $name = $_GET['name'];
-        $tanggal = $_GET['tanggal'];
-        $start = $_GET['start'];
-        $duration = $_GET['duration'];
-        $building = $_GET['building'];
-        $phone = $_GET['phone'];
+        $name = $_POST['name'];
+        $tanggal = $_POST['tanggal'];
+        $start = $_POST['start'];
+        $duration = $_POST['duration'];
+        $building = $_POST['building'];
+        $phone = $_POST['phone'];
         $check_out_jam = date("H:i", strtotime("+$duration hours", strtotime($start)));
         $check_out = date('m-d-Y H:i:s', strtotime("$tanggal $check_out_jam"));
         $check_in = date('m-d-Y H:i:s', strtotime("$tanggal $start"));
@@ -28,8 +28,8 @@
             $harga = 500;
         }
 
-        if (!empty($_GET['service'])) {
-            foreach ($_GET['service'] as $data) {
+        if (!empty($_POST['service'])) {
+            foreach ($_POST['service'] as $data) {
                 if ($data == "Catering") {
                     $harga += 700;
                 }
@@ -94,7 +94,7 @@
                             <td><?php echo $building ?></td>
                             <td><?php echo $phone ?></td>
                             <td><?php
-                            if (empty($_POST['service'])) {
+                            if (!empty($_POST['service'])) {
                                 echo "<ul>";
                                 foreach ($_POST['service'] as $layanan) {
                                     echo "<li>" .  $layanan . "</li>";

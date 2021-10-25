@@ -36,14 +36,14 @@
 
         <div class="container">
             <h5
-                style="text-align: center; background-color: rgb(44, 44, 44); height: 30px; color: white; margin-top: 50px;">
+                style="text-align: center; background-color: rgb(44, 44, 44); height: 30px; color: white; margin-top: 100px;">
                 Reserve your venue now!</h5><br>
 
             <section id="booking"
                 style="background-color: white; border: solid gray 1px; height: 800px; border-radius: 10px; display: flex;">
                 <div class="foto">
                     <?php
-                    if (!isset($gedung)){
+                    if (isset($gedung)){
                     ?>
                     <img src="img/<?php echo $gedung ?>.jpg"
                         style="margin-top: 200px; margin-left: 50px; margin-right: 50px;" alt="nusantara" height="230px">
@@ -112,19 +112,19 @@
                     <div class="col-12">
                         <label for="service" class="form-label">Add Service(s)</label>
                         <div class="form-check">
-                            <input class="form-check-input" name="service" type="checkbox" id="catering" value="Catering">
+                            <input class="form-check-input" name="service[]" type="checkbox" id="catering" value="Catering">
                             <label class="form-check-label" for="gridCheck">
                                 Catering / $700
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" name="service" type="checkbox" id="decor" value="Decoration">
+                            <input class="form-check-input" name="service[]" type="checkbox" id="decor" value="Decoration">
                             <label class="form-check-label" for="gridCheck">
                                 Decoration / $450
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" name="service" type="checkbox" id="sound" value="Sound System">
+                            <input class="form-check-input" name="service[]" type="checkbox" id="sound" value="Sound System">
                             <label class="form-check-label" for="gridCheck">
                                 Sound System / $250
                             </label>
