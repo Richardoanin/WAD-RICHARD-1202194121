@@ -1,5 +1,5 @@
     <?php
-    $conn = mysqli_connect("localhost","root","","Modul3");
+    $conn = mysqli_connect("localhost","root","","modul3");
     $id_buku = $_GET ['id_buku'];
     $hasil = mysqli_query($conn,"SELECT * FROM Buku_Table where id_buku = '$id_buku'");
     $data = mysqli_fetch_assoc($hasil);

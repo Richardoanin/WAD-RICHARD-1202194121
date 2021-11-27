@@ -47,7 +47,7 @@
         <div class="container">
             <section id="form" style="box-shadow: 0px 15px 40px 0px rgba(62,66,66,0.1); border-radius: 20px;">
                 <div class="container">
-                    <form class="row g-3" action="" method="post" entype="multipart/form-data" style="margin-top: 150px; height: 1000px;">
+                    <form class="row g-3" action="" method="post" enctype="multipart/form-data" style="margin-top: 150px; height: 1000px;">
                         <h1 style="font-weight: bold; text-align: center;">Tambah Data Buku</h1>
                         <div class="col-12">
                             <label for="judul" class="form-label" style="font-weight: bold;">Judul Buku</label>

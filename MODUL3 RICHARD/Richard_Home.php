@@ -1,6 +1,6 @@
     <?php
     $conn = mysqli_connect("localhost","root","","modul3");
-    $hasil = mysqli_query($conn,"SELECT . FROM Buku_Table");
+    $hasil = mysqli_query($conn,"SELECT * FROM Buku_Table");
     ?>
 
     <!doctype html>
