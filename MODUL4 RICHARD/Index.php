@@ -1,5 +1,7 @@
     <?php
 
+    session_start();
+
     include('Config.php');
 
     if(isset($_POST['submit'])){
