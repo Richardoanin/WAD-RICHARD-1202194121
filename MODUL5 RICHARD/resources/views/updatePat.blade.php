@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="container">
-    <h3 style="text-align: center; margin-top: 50px;">Input Vaccine</h3>
+    <h3 style="text-align: center; margin-top: 50px;">Update Patient</h3>
     <form action="/patient/{{$patient->id}}" method="post" enctype="multipart/form-data">
         @csrf
         @method('PUT')
