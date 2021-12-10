@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\vaccineController;
 use App\Http\Controllers\patientController;
 use Illuminate\Support\Facades\Route;
 
