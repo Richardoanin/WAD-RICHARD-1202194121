@@ -8,7 +8,7 @@
         <a href="/patient/register" class="btn btn-primary">Register Patient</a>
     </div>
     @else
-    <h3 style="text-align: center; margin-top: 50px;">List Vaccine</h3>
+    <h3 style="text-align: center; margin-top: 50px;">List Patient</h3>
     <a href="/patient/register" class="btn btn-primary" style="margin-bottom: 20px; margin-top: 20px;">Add Patient</a>
     <table class="table">
         <thead>
